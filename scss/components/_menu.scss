@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+  gap: 24px;
+  font-size: $fs-16;
+  line-height: $lh-28;
+  color: $color-light;
+  align-items: center;
+  justify-content: center;
+
+  &--hidden-sm {
+    @media screen and (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+}

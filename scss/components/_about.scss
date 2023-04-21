@@ -1,0 +1,117 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 80px;
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 8vh 40px;
+  }
+
+  &__decoration {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__container {
+    height: 23px;
+
+    &--yellow {
+      background-color: $color-yellow;
+      width: 60%;
+
+      @media (max-width: $breakpoint-md) {
+        width: 75%;
+      }
+    }
+
+    &--purple {
+      background-color: $color-purple;
+      width: 20%;
+
+      @media (max-width: $breakpoint-md) {
+        width: 25%;
+      }
+    }
+  }
+
+  &__content {
+    background-color: $color-lavender;
+    display: flex;
+    gap: 82px;
+    padding-top: 96px;
+    padding-left: 80px;
+    padding-bottom: 96px;
+    padding-right: 108px;
+
+    @media (max-width: $breakpoint-xl) {
+      padding-top: 70px;
+      padding-left: 60px;
+      padding-bottom: 80px;
+      padding-right: 90px;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      padding-top: 50px;
+      padding-left: 40px;
+      padding-bottom: 65px;
+      padding-right: 75px;
+    }
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      padding-top: 40px;
+      padding-left: 30px;
+      padding-bottom: 65px;
+      padding-right: 50px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    width: 50%;
+
+    @media (max-width: $breakpoint-md) {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: $fw-semiBold;
+    font-size: $fs-16;
+    line-height: 125%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+
+  &__title {
+    @include h2;
+
+    @media (max-width: $breakpoint-ms) {
+      font-size: $fs-30;
+      line-height: 125%;
+    }
+
+    &--small {
+      font-size: $fs-28;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: $fw-normal;
+    font-size: $fs-16;
+    line-height: 175%;
+    color: $color-medgray;
+  }
+}

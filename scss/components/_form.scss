@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 323px;
+    height: 56px;
+    border: 1px solid $color-darkgray;
+    color: $color-medgray;
+    padding: 14px 24px;
+		cursor: text;
+
+    @media (max-width: $breakpoint-sm) {
+      width: 290px;
+    }
+  }
+}

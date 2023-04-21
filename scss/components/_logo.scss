@@ -1,0 +1,41 @@
+.logo {
+  padding: 8vh 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: $fw-normal;
+    font-size: $fs-14;
+    line-height: 143%;
+    color: $color-medgray;
+    opacity: 0.6;
+  }
+
+  &__title {
+    @include h4;
+  }
+
+  &__item {
+    height: 32px;
+    width: 215px;
+    width: fit-content;
+    flex: auto;
+    filter: invert(34%) sepia(22%) saturate(208%) hue-rotate(197deg)
+      brightness(90%) contrast(92%);
+  }
+}

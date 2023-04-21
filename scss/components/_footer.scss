@@ -1,0 +1,88 @@
+.footer {
+  padding: 8vh 80px;
+  background-color: $color-black;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  &__menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $breakpoint-md) {
+      justify-content: center;
+    }
+  }
+
+  &__form {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 80px 64px;
+
+    @media (max-width: $breakpoint-xl) {
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      padding: 40px 32px;
+    }
+  }
+
+  &__heading {
+    @include h2;
+    color: $color-light;
+    width: 50%;
+
+    @media (max-width: $breakpoint-xl) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $breakpoint-ms) {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: $fw-normal;
+    font-size: $fs-16;
+    line-height: 175%;
+    color: $color-light;
+    opacity: 0.7;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__icon {
+    height: 16px;
+    width: 16px;
+    filter: invert(47%) sepia(6%) saturate(444%) hue-rotate(196deg)
+      brightness(89%) contrast(87%);
+    cursor: pointer;
+  }
+}

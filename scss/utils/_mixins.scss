@@ -1,0 +1,39 @@
+@mixin h1 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-48;
+  line-height: 133%;
+  letter-spacing: -2px;
+  color: $color-black;
+}
+
+@mixin h2 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-36;
+  line-height: 133%;
+  letter-spacing: -2px;
+  color: $color-black;
+}
+
+@mixin h3 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-28;
+  line-height: 143%;
+  letter-spacing: -1px;
+  color: $color-black;
+}
+
+@mixin h4 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: $fw-bold;
+  font-size: $fs-24;
+  line-height: 133%;
+
+  color: $color-medgray;
+}
